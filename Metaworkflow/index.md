@@ -30,7 +30,8 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * scRNA-seq
     * etc, ...
 * Analysis_type (menu déroulant) : Type d'analyse à réaliser
-    * Concatenation_QC : Réalise la concatènation des fichiers FASTQ générés par le séquenceur et le contrôle qualité des reads
-    * Concatenation_Quantification_QC : Réalise la concaténation des fichiers FASTQ générés par le séquenceur, l'analyse (aligenement, comptage des reads alignés) et le contrôle qualité des reads
-    * Demultiplexage_Concatenation_QC : Réalise le démultiplexage des BCL, la concaténation les fichiers FASTQ générés et le contrôle qualité des reads
-    * Demultiplexage_Concatenation_Quantification_QC : Réalise le démultiplexage des BCL, la concaténation les fichiers FASTQ générés, l'analyse (alignement, comptage des reads alignés) et le contrôle qualité des reads
+    * Concatenation_QC : Utilise les fichiers FASTQ produits par le séquenceur et produit un rapport MultiQC
+    * Concatenation_Quantification_QC : Utilise les fichiers FASTQ produits par le séquenceur, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
+    * Demultiplexage_Concatenation_QC : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ et un rapport MultiQC
+    * Demultiplexage_Concatenation_Quantification_QC : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ une table de comptage des reads alignés sur un génome et un rapport MultiQC
+
