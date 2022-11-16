@@ -12,16 +12,25 @@ Le *Sequencing\_Summary*, est un classeur Excel contenant l'ensemble des metadon
 
 ### Remplissage du classeur
 
-Les metadonnées sont entrée dans l'onglet *samples* du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter.
+Les metadonnées sont entrée dans l'onglet *samples* du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter. 
+
+Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains cas (précisé ci-dessous), il faut utiliser un menu déroulant pour compléter les cellules. Pour certaines colonnes, les choix possibles du menu seront expliqués.
 
 * T : Index de la ligne pour pouvoir ordonner lies lignes
 * sample_name : Concatenation du Sample_ID et du Sample_Name.
 * Sample_Name : Nom de l'échantillon 
 * Sample_ID : ID TGML de l'échantillon
-* Process : Indique si il faut traiter l'échantillon ou pas
-* Type : Type de librairies
-* Analysis_type : Type d'analyse à réaliser
-    * Concatenation_QC
-    * Concatenation_Quantification_QC
-    * Demultiplexage_Concatenation_QC
-    * Demultiplexage_Concatenation_Quantification_QC
+* Process (menu déroulant) : Indique si il faut traiter l'échantillon ou pas
+    * no : Ne pas traiter l'échantillon
+    * yes : Traifer l'échantillon
+    * done : L'échantillon a déjà été traité
+* Type (menu déroulant) : Type de librairies
+    * RNA-seq
+    * ChIP-seq
+    * scRNA-seq
+    * etc, ...
+* Analysis_type (menu déroulant) : Type d'analyse à réaliser
+    * Concatenation_QC : Réalise la concatènation des fichiers FASTQ générés par le séquenceur et le contrôle qualité des reads
+    * Concatenation_Quantification_QC : Réalise la concaténation des fichiers FASTQ générés par le séquenceur, l'analyse (aligenement, comptage des reads alignés) et le contrôle qualité des reads
+    * Demultiplexage_Concatenation_QC : Réalise le démultiplexage des BCL, la concaténation les fichiers FASTQ générés et le contrôle qualité des reads
+    * Demultiplexage_Concatenation_Quantification_QC : Réalise le démultiplexage des BCL, la concaténation les fichiers FASTQ générés, l'analyse (alignement, comptage des reads alignés) et le contrôle qualité des reads
