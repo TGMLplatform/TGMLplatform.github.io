@@ -20,7 +20,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * sample_name : Concatenation du Sample_ID et du Sample_Name.
 * Sample_Name : Nom de l'échantillon 
 * Sample_ID : ID TGML de l'échantillon
-* Process i**(menu déroulant)** : Indique si il faut traiter l'échantillon ou pas
+* Process **(menu déroulant)** : Indique si il faut traiter l'échantillon ou pas
     * *no* : Ne pas traiter l'échantillon
     * *yes* : Traifer l'échantillon
     * *done* : L'échantillon a déjà été traité
@@ -29,9 +29,23 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * ChIP-seq
     * scRNA-seq
     * etc, ...
-* Analysis_type (menu déroulant) : Type d'analyse à réaliser
+* Analysis_type **(menu déroulant)** : Type d'analyse à réaliser
     * *Concatenation_QC* : Utilise les fichiers FASTQ produits par le séquenceur et produit un rapport MultiQC
     * *Concatenation_Quantification_QC* : Utilise les fichiers FASTQ produits par le séquenceur, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
     * *Demultiplexage_Concatenation_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ et un rapport MultiQC
     * *Demultiplexage_Concatenation_Quantification_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ une table de comptage des reads alignés sur un génome et un rapport MultiQC
-
+* Specie **(menu déroulant)** : Nom complet de l'organisme
+    * Homo_sapiens
+    * Mus_musculus
+    * etc, ...
+* Se_or_Pe **(menu déroulant)** : Spécifie si les reads sont paired-end (pe) ou single-end (se)
+* Origin **(menu déroulant)** : Spécifie le type de fichiers données en entrée au workflow. Les choix utilisés le plus souvent sont listés ci-dessous. 
+    * bcl : Part de fichier BCL
+    * bcl_no_mismatch : Part de fichier BCL, avec un demultiplexage sans autorisqer d'erreur dans les séquences d'indexes
+    * NS500_W10 : Part de fichiers FASTQ générés par le séquenceur
+* Accession : Chemin vers les fichiers d'entrées (BCL ou FASTQ)
+* Run : Numéro du run
+* Customer **(menu déroulant)** : Nom du collaborateur/trice
+* Sample_Project : Nom du run 
+* Kit_index **(menu déroulant)** : Kit d'index utilisé pour préparer la librarie
+* I7_Index_ID : 
