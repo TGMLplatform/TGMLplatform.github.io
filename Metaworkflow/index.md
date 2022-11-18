@@ -16,7 +16,7 @@ Les metadonnées sont entrées dans l'onglet *samples* du classeur. La section s
 
 Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains cas (précisé ci-dessous), il faut utiliser un menu déroulant pour compléter les cellules. Pour certaines colonnes, les choix possibles du menu seront expliqués.
 
-1. A remplir pour tous les runs
+1. **A remplir pour tous les runs**
     * T : Index de la ligne pour pouvoir ordonner lies lignes
     * sample\_name : Concatenation du Sample\_ID et du Sample\_Name.
     * Sample\_Name : Nom de l'échantillon 
@@ -58,7 +58,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * Description : Type de librairie (reprend le contenu de la case *Type* automatiquement)
     * Date\_run : Date du run
     * Reads : Taille des lectures (taille\_read1xtaille\_read2).
-2. A remplir pour les expériences de CITE-seq de Cellplex ou de SingleCell RNA-seq
+2. **A remplir pour les expériences de CITE-seq de Cellplex ou de SingleCell RNA-seq**
     * Cellplex\_feature\_type **(menu déroulant)** : Type de librairie pour le Cellplex
         * gene\_Expression : Librairie de Gene Expression 
         * Multiplexing\_Capture : Librairie de CMO
@@ -68,7 +68,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * HTO\_information : Même principe que ADT\_information, mais pour les anticorps de multiplexage
     * Kit\_HTO **(menu déroulant)** : Spécifie le kit HTO utilisé (TotalSeq\_A ou Totaseq\_B)
     * Index\_10X : Indiquer "yes" si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes Index et Index2
-3. Ne pas remplir. Utilisé par d'ancienne version, mais conservé
+3. **Ne pas remplir. Utilisé par d'ancienne version, mais conservé**
     * Quantile\_normalization
     * Commentaire
     * Merged\_or\_unmerged
