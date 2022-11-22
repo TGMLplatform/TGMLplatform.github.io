@@ -10,9 +10,9 @@ Le *Sequencing\_Summary*, est un classeur Excel contenant l'ensemble des metadon
 
 **Lors du remplissage du classeur, NE PAS METTRE d'espaces.**
 
-### 
+### Onglet Samples 
 
-Les metadonnées sont entrées dans l'onglet *samples* du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter. 
+Les metadonnées sont entrées dans cet onglet du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter. 
 
 Pour savoir quelles colonnes remplir pour les différentes analyses réalisables, se référer à l'onglet "Examples" du *Sequencing_Summary*.
 
@@ -81,4 +81,10 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * Sample\_Plate
 * Sample\_Well 
 
-## Mise à jour des menus déroulants
+### Onglet data_validation_lists
+
+#### Mise à jour des menus déroulants
+
+### Onglet examples
+
+### Onglet genome_version
