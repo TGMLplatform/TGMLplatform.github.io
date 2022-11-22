@@ -63,9 +63,6 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * *Multiplexing\_Capture* : Librairie de CMO
 * **CMO\_information** : Liste les CMO utilisés avec leur nom (Sample1,CMO1;Sample2,CMO2;etc,...). **Séparer le nom de l'échantillon et le CMO correspondant par une virgule. Entre deux échantillons différents, mettre un point-virgule**
 * **Expected\_cell\_number** : Nombre de cellules attendues pour le Cellplex
-* **ADT\_information** : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,Séquence1;Anticorps2,Séquence2;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
-* **HTO\_information** : Même principe que ADT\_information, mais pour les anticorps de multiplexage
-* **Kit\_HTO** *(menu déroulant)* : Spécifie le kit HTO utilisé (TotalSeq\_A ou Totaseq\_B)
 * **Index\_10X** : Indiquer *"yes"* si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes *Index* et *Index2*
 
 **Ne pas remplir. Utilisé par d'ancienne version, mais conservé**
@@ -78,6 +75,9 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * Chip\_target
 * Sample\_Plate
 * Sample\_Well 
+* ADT\_information
+* HTO\_information
+* Kit\_HTO
 
 ## Onglet data_validation_lists
 
