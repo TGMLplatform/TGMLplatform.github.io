@@ -31,14 +31,14 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
         * *scRNA-seq*
         * ...
     * **Analysis\_type** *(menu déroulant)* : Type d'analyse à réaliser
-        * *Concatenation\_QC* : Utilise les fichiers FASTQ produits par le séquenceur et produit un rapport MultiQC
-        * *Concatenation\_Quantification\_QC* : Utilise les fichiers FASTQ produits par le séquenceur, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
-        * *Demultiplexage\_Concatenation\_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ et un rapport MultiQC
-        * *Demultiplexage\_Concatenation\_Quantification\_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ une table de comptage des reads alignés sur un génome et un rapport MultiQC
+        * *Concatenation\_QC* : Utilise les fichiers FASTQ produits par le séquenceur, les concatène et produit un rapport MultiQC
+        * *Demultiplexage\_Concatenation\_QC* : Utilise les fichiers BCL produites par le séquenceur, produit des fichiers FASTQ, les concatène et produit un rapport MultiQC
+        * *Concatenation\_Quantification\_QC* : Utilise les fichiers FASTQ produits par le séquenceur, les concatènes, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
+        * *Demultiplexage\_Concatenation\_Quantification\_QC* : Utilise les fichiers BCL produites par le séquenceur, produit des fichiers FASTQ, les concatènes, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
     * **Specie** *(menu déroulant)* : Nom complet de l'organisme
         * *Homo\_sapiens*
         * *Mus\_musculus*
-        * *etc*
+        * ...
     * **Se\_or\_Pe** *(menu déroulant)* : Spécifie si les reads sont paired-end (pe) ou single-end (se)
     * **Origin** *(menu déroulant)* : Spécifie le type de fichiers données en entrée au workflow. Les choix utilisés le plus souvent sont listés ci-dessous. 
         * *bcl* : Part de fichier BCL
