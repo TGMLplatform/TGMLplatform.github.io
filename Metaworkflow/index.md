@@ -18,10 +18,10 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 
 1. **A remplir pour tous les runs**
     * **T** : Index de la ligne pour pouvoir ordonner lies lignes
-    * sample\_name : Concatenation (automatique) du Sample\_ID et du Sample\_Name.
-    * Sample\_Name : Nom de l'échantillon 
+    * **sample\_name** : Concatenation (automatique) du Sample\_ID et du Sample\_Name
+    * **Sample\_Name** : Nom de l'échantillon 
     * Sample\_ID : ID TGML de l'échantillon
-    * Process ***(menu déroulant)*** : Indique si il faut traiter l'échantillon ou pas
+    * **Process** *(menu déroulant)* : Indique si l'échantillon doit être traité
         * *no* : Ne pas traiter l'échantillon
         * *yes* : Traiter l'échantillon
         * *done* : L'échantillon a déjà été traité
