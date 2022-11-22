@@ -58,8 +58,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * **Length\_2** : Longeur de l'index I5 (calculé automatiquement)
     * **Description** : Type de librairie (reprend automatiquement le contenu de la case *Type*)
     * **Date\_run** : Date du run
-    * **Reads** : Taille des lectures (taille\_read1xtaille\_read2).
-2. **A remplir pour les expériences de CITE-seq, de Cellplex ou de SingleCell RNA-seq**
+    * **Reads** : Taille des lectures ("taille\_read1"x"taille\_read2").
     * **Cellplex\_feature\_type** *(menu déroulant)* : Type de librairie pour le Cellplex
         * *gene\_Expression* : Librairie de Gene Expression 
         * *Multiplexing\_Capture* : Librairie de CMO
