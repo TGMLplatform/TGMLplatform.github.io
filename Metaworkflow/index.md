@@ -44,6 +44,8 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * *bcl* : Part de fichier BCL
     * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autoriser d'erreur dans les séquences d'indexes
     * *NS500\_W10* : Part de fichiers FASTQ générés par le séquenceur
+    * *NextSeq500* : Part de fichiers FASTQ générés par le séquenceur avant la mise à jour de Septembre 2021
+    * *sra* : Part d'un numéro d'archive SRA (Ne peux réaliser que la récupération des fichiers FASTQ)
 * **Accession** : Chemin vers les fichiers d'entrée
 * **Run** : Numéro du run
 * **Customer** *(menu déroulant)* : Nom du collaborateur/trice
@@ -81,8 +83,21 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 
 ## Onglet data_validation_lists
 
-### Mise à jour des menus déroulants
+L'onglet data_validation_lists contient l'ensemble des valeurs utilisées pour les menus déroulants.
 
+### Ajouter une valeur dans les menus déroulants
+
+Pour ajouter une valeur dans un menu déroulant
+
+* Dans l'onglet *data_validation_lists*, ajouter la valeur dans la colonne d'intêret
+* Dans l'onglet *samples*, sélectionner la colonne d'intêret sauf le nom de la colonne. Pour cela :
+    * Sélectionner le nom de la colonne
+    * Avec le clavier : 
+        * Appuyer sur la flèche "bas"
+        * Enfoncer ctrl + shift
+        * Appuyer sur la flèche "bas" jusqu'à atteindre la fin du document
+        * Une fois fait, l'ensemble de la colonne sera selectionnée
+* Dans l'onglet supérieur d'Excel, aller dans *Données* -> Validation des données -> Si une fenêtre demande si vous voulez modifier les données sélectionner "Oui" -> Autoriser = Liste -> Source
 ## Onglet examples
 
 ## Onglet genome_version
