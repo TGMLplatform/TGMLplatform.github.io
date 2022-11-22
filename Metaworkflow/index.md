@@ -62,7 +62,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * **Reads** : Taille des lectures ("taille\_read1"x"taille\_read2").
 * **Cellplex\_feature\_type** *(menu déroulant)* : Type de librairie pour le Cellplex
     * *gene\_Expression* : Librairie de Gene Expression (ARN messager)
-        * *Multiplexing\_Capture* : Librairie de CMO
+    * *Multiplexing\_Capture* : Librairie de CMO
     * **CMO\_information** : Liste les CMO utilisés avec leur nom (Sample1,CMO1;Sample2,CMO2;etc,...). **Séparer le nom de l'échantillon et le CMO correspondant par une virgule. Entre deux échantillons différents, mettre un point-virgule**
     * **Expected\_cell\_number** : Nombre de cellules attendues pour le Cellplex
     * **ADT\_information** : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,Séquence1;Anticorps2,Séquence2;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
