@@ -40,14 +40,15 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
         * *Mus\_musculus*
         * ...
     * **Se\_or\_Pe** *(menu déroulant)* : Spécifie si les reads sont paired-end (pe) ou single-end (se)
-    * **Origin** *(menu déroulant)* : Spécifie le type de fichiers données en entrée au workflow. Les choix utilisés le plus souvent sont listés ci-dessous. 
+    * **Origin** *(menu déroulant)* : Spécifie le type de fichiers d'entrée.
+        * Organiser par ordre d'utilisation
         * *bcl* : Part de fichier BCL
-        * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autorisqer d'erreur dans les séquences d'indexes
+        * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autoriser d'erreur dans les séquences d'indexes
         * *NS500\_W10* : Part de fichiers FASTQ générés par le séquenceur
-    * **Accession** : Chemin vers les fichiers BCL ou FASTQ
+    * **Accession** : Chemin vers les fichiers d'entrée
     * **Run** : Numéro du run
     * **Customer** *(menu déroulant)* : Nom du collaborateur/trice
-    * **Sample\_Project** : Nom du run 
+    * **Run\_Name** : Nom du run 
     * **Kit\_index** *(menu déroulant)* : Kit d'index utilisé pour préparer la librarie
     * **I7\_Index\_ID** : Nom de l'index I7
     * **Index** : Séquence de l'index I7
@@ -55,19 +56,19 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * **I5\_Index\_ID** : Nom de l'index I5
     * **Index2** : Séquence de l'index I5
     * **Length\_2** : Longeur de l'index I5 (calculé automatiquement)
-    * **Description** : Type de librairie (reprend le contenu de la case *Type* automatiquement)
+    * **Description** : Type de librairie (reprend automatiquement le contenu de la case *Type*)
     * **Date\_run** : Date du run
     * **Reads** : Taille des lectures (taille\_read1xtaille\_read2).
 2. **A remplir pour les expériences de CITE-seq, de Cellplex ou de SingleCell RNA-seq**
-    * Cellplex\_feature\_type **(menu déroulant)** : Type de librairie pour le Cellplex
+    * **Cellplex\_feature\_type** *(menu déroulant)* : Type de librairie pour le Cellplex
         * *gene\_Expression* : Librairie de Gene Expression 
         * *Multiplexing\_Capture* : Librairie de CMO
-    * CMO\_information : Liste les CMO utilisés avec leur nom (Sample1,CMO1;Sample2,CMO2;etc,...). **Séparer l'échantillon du nom du CMO par une virgule et les paires échantillon/nom CMO par des point-virgule**
-    * Expected\_cell\_number : Nombre de cellules attendues pour le Cellplex
-    * ADT\_information : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,ATGCATGCATGC;Anticorps2,CGTACGTACGTA;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
-    * HTO\_information : Même principe que ADT\_information, mais pour les anticorps de multiplexage
-    * Kit\_HTO **(menu déroulant)** : Spécifie le kit HTO utilisé (TotalSeq\_A ou Totaseq\_B)
-    * Index\_10X : Indiquer *"yes"* si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes Index et Index2
+    * **CMO\_information** : Liste les CMO utilisés avec leur nom (Sample1,CMO1;Sample2,CMO2;etc,...). **Séparer l'échantillon du nom du CMO par une virgule et les paires échantillon/nom CMO par des point-virgule**
+    * **Expected\_cell\_number** : Nombre de cellules attendues pour le Cellplex
+    * **ADT\_information** : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,ATGCATGCATGC;Anticorps2,CGTACGTACGTA;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
+    * **HTO\_information** : Même principe que ADT\_information, mais pour les anticorps de multiplexage
+    * **Kit\_HTO** *(menu déroulant)* : Spécifie le kit HTO utilisé (TotalSeq\_A ou Totaseq\_B)
+    * **Index\_10X** : Indiquer *"yes"* si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes Index et Index2
 3. **Ne pas remplir. Utilisé par d'ancienne version, mais conservé**
     * Quantile\_normalization
     * Commentaire
