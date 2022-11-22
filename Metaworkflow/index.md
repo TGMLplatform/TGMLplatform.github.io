@@ -18,33 +18,33 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 
 1. **A remplir pour tous les runs**
     * T : Index de la ligne pour pouvoir ordonner lies lignes
-    * sample\_name : Concatenation du Sample\_ID et du Sample\_Name.
+    * sample\_name : Concatenation (automatique) du Sample\_ID et du Sample\_Name.
     * Sample\_Name : Nom de l'échantillon 
     * Sample\_ID : ID TGML de l'échantillon
     * Process **(menu déroulant)** : Indique si il faut traiter l'échantillon ou pas
         * *no* : Ne pas traiter l'échantillon
-        * *yes* : Traifer l'échantillon
+        * *yes* : Traiter l'échantillon
         * *done* : L'échantillon a déjà été traité
     * Type **(menu déroulant)** : Type de librairies
-        * RNA-seq
-        * ChIP-seq
-        * scRNA-seq
-        * etc, ...
+        * *RNA-seq*
+        * *ChIP-seq*
+        * *scRNA-seq*
+        * *etc*
     * Analysis\_type **(menu déroulant)** : Type d'analyse à réaliser
         * *Concatenation_QC* : Utilise les fichiers FASTQ produits par le séquenceur et produit un rapport MultiQC
         * *Concatenation_Quantification_QC* : Utilise les fichiers FASTQ produits par le séquenceur, produit une table de comptage des reads alignés sur un génome et un rapport MultiQC
         * *Demultiplexage_Concatenation_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ et un rapport MultiQC
         * *Demultiplexage_Concatenation_Quantification_QC* : Utilise les images BCL produites par le séquenceur, produit des fichiers FASTQ une table de comptage des reads alignés sur un génome et un rapport MultiQC
     * Specie **(menu déroulant)** : Nom complet de l'organisme
-        * Homo\_sapiens
-        * Mus\_musculus
-        * etc, ...
+        * *Homo\_sapiens*
+        * *Mus\_musculus*
+        * *etc*
     * Se\_or\_Pe **(menu déroulant)** : Spécifie si les reads sont paired-end (pe) ou single-end (se)
     * Origin **(menu déroulant)** : Spécifie le type de fichiers données en entrée au workflow. Les choix utilisés le plus souvent sont listés ci-dessous. 
-        * bcl : Part de fichier BCL
-        * bcl\_no\_mismatch : Part de fichier BCL, avec un demultiplexage sans autorisqer d'erreur dans les séquences d'indexes
-        * NS500\_W10 : Part de fichiers FASTQ générés par le séquenceur
-    * Accession : Chemin vers les fichiers d'entrées (BCL ou FASTQ)
+        * *bcl* : Part de fichier BCL
+        * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autorisqer d'erreur dans les séquences d'indexes
+        * *NS500\_W10* : Part de fichiers FASTQ générés par le séquenceur
+    * Accession : Chemin vers les fichiers BCL ou FASTQ
     * Run : Numéro du run
     * Customer **(menu déroulant)** : Nom du collaborateur/trice
     * Sample\_Project : Nom du run 
@@ -58,10 +58,10 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * Description : Type de librairie (reprend le contenu de la case *Type* automatiquement)
     * Date\_run : Date du run
     * Reads : Taille des lectures (taille\_read1xtaille\_read2).
-2. **A remplir pour les expériences de CITE-seq de Cellplex ou de SingleCell RNA-seq**
+2. **A remplir pour les expériences de CITE-seq, de Cellplex ou de SingleCell RNA-seq**
     * Cellplex\_feature\_type **(menu déroulant)** : Type de librairie pour le Cellplex
-        * gene\_Expression : Librairie de Gene Expression 
-        * Multiplexing\_Capture : Librairie de CMO
+        * *gene\_Expression* : Librairie de Gene Expression 
+        * *Multiplexing\_Capture* : Librairie de CMO
     * CMO\_information : Liste les CMO utilisés avec leur nom (Sample1,CMO1;Sample2,CMO2;etc,...). **Séparer l'échantillon du nom du CMO par une virgule et les paires échantillon/nom CMO par des point-virgule**
     * Expected\_cell\_number : Nombre de cellules attendues pour le Cellplex
     * ADT\_information : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,ATGCATGCATGC;Anticorps2,CGTACGTACGTA;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
@@ -76,5 +76,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * Project
     * Cell\_type
     * Chip\_target
-    * Sample\_Plate : Position de la FlowCell
-    * Sample\_Well : Numéro de puit de l'échantillon
+    * Sample\_Plate
+    * Sample\_Well 
+
+## Mise à jour des menus déroulants
