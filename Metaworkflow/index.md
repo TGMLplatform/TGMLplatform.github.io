@@ -8,20 +8,20 @@ Le *Metaworkflow* utilise un classeur Excel nommé *Sequencing\_summary.xslx* si
 
 Le *Sequencing\_Summary*, est un classeur Excel contenant l'ensemble des metadonnées des runs de la plateforme. Il permet de réaliser différentes analyses en fonction des metadonnées entrées. 
 
-**Lors du remplissage du classeur, évitez d'incorporer des espaces.**
+**Lors du remplissage du classeur, NE PAS METTRE d'espaces.**
 
-### Remplissage du classeur
+### 
 
 Les metadonnées sont entrées dans l'onglet *samples* du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter. 
 
-Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains cas (précisé ci-dessous), il faut utiliser un menu déroulant pour compléter les cellules. Pour certaines colonnes, les choix possibles du menu seront expliqués.
+Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains cas (précisé ci-dessous), il faut utiliser un menu déroulant pour compléter les cellules.
 
 1. **A remplir pour tous les runs**
-    * T : Index de la ligne pour pouvoir ordonner lies lignes
+    * **T** : Index de la ligne pour pouvoir ordonner lies lignes
     * sample\_name : Concatenation (automatique) du Sample\_ID et du Sample\_Name.
     * Sample\_Name : Nom de l'échantillon 
     * Sample\_ID : ID TGML de l'échantillon
-    * Process **(menu déroulant)** : Indique si il faut traiter l'échantillon ou pas
+    * Process ***(menu déroulant)*** : Indique si il faut traiter l'échantillon ou pas
         * *no* : Ne pas traiter l'échantillon
         * *yes* : Traiter l'échantillon
         * *done* : L'échantillon a déjà été traité
@@ -67,7 +67,7 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
     * ADT\_information : Liste les anticorps marquant des protéines utilisés avec leur séquence (Anticorps1,ATGCATGCATGC;Anticorps2,CGTACGTACGTA;etc,...). **Séparer l'échantillon de la séqunece de l'anticorps par une virgule et les paires échantillon/séquence anticorps par des point-virgule**
     * HTO\_information : Même principe que ADT\_information, mais pour les anticorps de multiplexage
     * Kit\_HTO **(menu déroulant)** : Spécifie le kit HTO utilisé (TotalSeq\_A ou Totaseq\_B)
-    * Index\_10X : Indiquer "yes" si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes Index et Index2
+    * Index\_10X : Indiquer *"yes"* si les indexes 10X ont été utilisé, sinon, remplir les séquences d'indexes dans les colonnes Index et Index2
 3. **Ne pas remplir. Utilisé par d'ancienne version, mais conservé**
     * Quantile\_normalization
     * Commentaire
