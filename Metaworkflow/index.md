@@ -1,16 +1,14 @@
-# Documentation du *Metaworkflow*
-
-## Utilisation du workflow 
+# Utilisation du workflow 
 
 Le *Metaworkflow* utilise un classeur Excel nommé *Sequencing\_summary.xslx* situé sur la baie de stockage Panoramix.
 
-## Le classeur Excel *Sequencing_Summary*
+# Le classeur Excel *Sequencing_Summary*
 
 Le *Sequencing\_Summary*, est un classeur Excel contenant l'ensemble des metadonnées des runs de la plateforme. Il permet de réaliser différentes analyses en fonction des metadonnées entrées. 
 
 **Lors du remplissage du classeur, NE PAS METTRE d'espaces.**
 
-### Onglet Samples 
+## Onglet Samples 
 
 Les metadonnées sont entrées dans cet onglet du classeur. La section suivante va présenter l'ensemble des colonnes de cet onglet et expliquer comment les compléter. 
 
@@ -81,10 +79,10 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * Sample\_Plate
 * Sample\_Well 
 
-### Onglet data_validation_lists
+## Onglet data_validation_lists
 
-#### Mise à jour des menus déroulants
+### Mise à jour des menus déroulants
 
-### Onglet examples
+## Onglet examples
 
-### Onglet genome_version
+## Onglet genome_version
