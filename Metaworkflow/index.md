@@ -81,9 +81,9 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * HTO\_information
 * Kit\_HTO
 
-## Onglet data_validation_lists
+## Onglet data\_validation\_lists
 
-L'onglet data_validation_lists contient l'ensemble des valeurs utilisées pour les menus déroulants.
+L'onglet data\_validation\_lists contient l'ensemble des valeurs utilisées pour les menus déroulants.
 
 ### Ajouter une valeur dans les menus déroulants
 
@@ -97,7 +97,18 @@ Pour ajouter une valeur dans un menu déroulant
         * Enfoncer ctrl + shift
         * Appuyer sur la flèche "bas" jusqu'à atteindre la fin du document
         * Une fois fait, l'ensemble de la colonne sera selectionnée
-* Dans l'onglet supérieur d'Excel, aller dans *Données* -> Validation des données -> Si une fenêtre demande si vous voulez modifier les données sélectionner "Oui" -> Autoriser = Liste -> Source
+* Dans l'onglet supérieur d'Excel, aller dans *Données* -> Validation des données -> Si une fenêtre demande si vous voulez modifier les données sélectionner "Oui" -> Autoriser = Liste -> Source = Sélectionner les valeurs dans l'onglet *data_validation_lists*.
+
 ## Onglet examples
 
-## Onglet genome_version
+L'onglet *examples* propose des exemples des remplissages de l'onglet *samples*
+
+* Demultiplexage 
+* Demultiplexage avec analyse de données
+* Analyses de données à partir des FASTQ générés par le séquenceur
+* Analyses de données de single-cell RNA-seq
+* Analyses de données de single-cell RNA-seq multiplexé
+
+## Onglet genome\_version
+
+L'onglet *genome_version* contient la correspondance entre le nom d'organisme et la version du génome utilisé pour l'analyse. **Modifier les valeurs ne changera pas les version de génome utilisée!!!**
