@@ -41,10 +41,13 @@ Voici une liste des colonnes et des valeurs qu'elles contiennent. Dans certains 
 * **Se\_or\_Pe** *(menu déroulant)* : Spécifie si les reads sont paired-end (pe) ou single-end (se)
 * **Origin** *(menu déroulant)* : Spécifie le type de fichiers d'entrée.
     * Organiser par ordre d'utilisation
-    * *bcl* : Part de fichier BCL
-    * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autoriser d'erreur dans les séquences d'indexes
-    * *NS500\_W10* : Part de fichiers FASTQ générés par le séquenceur
-    * *NextSeq500* : Part de fichiers FASTQ générés par le séquenceur avant la mise à jour de Septembre 2021
+    * *bcl* : Part de fichier BCL. Demultipelxage avec bcl2fastq
+    * *bcl\_no\_mismatch* : Part de fichier BCL, avec un demultiplexage sans autoriser d'erreur dans les séquences d'indexes. Demultipelxage avec bcl2fastq
+    * *bcl\_NS2000\_p1p2* : Part des fichier BCL provenant du NextSeq 2000 avec une *Flowcell* P1 ou P2 (1 lane). Demultipelxage avec bcl-convert
+    * *bcl\_NS2000\_p3* : Part des fichier BCL provenant du NextSeq 2000 avec une *Flowcell* P3 (2 lanes). Demultipelxage avec bcl-convert
+    * *NS500\_W10* : Part de fichiers FASTQ générés par le NextSeq500
+    * *NextSeq500* : Part de fichiers FASTQ générés par le NextSeq500 avant la mise à jour de Septembre 2021
+    * *NextSeq2000* : Part de fichiers FASTQ générés par le NextSeq2000
     * *sra* : Part d'un numéro d'archive SRA (Ne peux réaliser que la récupération des fichiers FASTQ)
 * **Accession** : Chemin vers les fichiers d'entrée
 * **Run** : Numéro du run
